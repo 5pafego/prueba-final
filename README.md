@@ -11,7 +11,7 @@
 ### Prueba evaluatoria de HTML, CSS y Javascript
 ### Bootcamp Peñascal F5.
 <br>
-# Proyecto:
+### Proyecto:
   
   Este es un sitio que te pone en contacto con profesionales que te ayudaran a realizar tareas del día a día.
   
