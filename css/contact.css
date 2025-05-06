@@ -44,6 +44,24 @@
    .form-input label{
        width:50%;
    }
-   .label .confirmar{
-       color:red;
+   .confirmar{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 1rem;
+       width:100%;
+   }
+   .confirmar input{
+       width: 20px;
+       height: 20px;
+       margin-right: 1rem;
+   }
+   .confirmar label{
+       width: 100%;
+       font-size: 1rem;
+       color: var(--texto);
+   }
+  
+   .confirmar a{
+       color:var(--texto-destacado);
    }
