@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto</title>
+<link rel="icon" href="img/mano-amiga.ico" type="image/x-icon" >
+<!-- estilos-->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/contact.css">
+<!-- fuentes-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="img/mano-amiga.png" alt="logo-empresa">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+
+        </ul>
+
+</header>
+ <main>
+    <section>
+        <article>
+        <div class="article-text">
+        <h1>Contacto</h1>
+        <p>¿Listo para simplificar tu vida?</p>
+        <p>¡Cuéntanos qué necesitas y encontraremos al colaborador perfecto para ti!</p>
+        
+        </div>
+       </article>
+    </section>
+
+    <section id="contact-form-section">
+        <h1>Formulario de contacto</h1>
+
+<!-- enviar datos por metodo get en la url -->
+<form id="formulario" action="mostrar-GET.html" method="get">
+    <label for="name">Nombre:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Comentario:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" placeholder="Escribe aqui tu comentario"></textarea><br><br>
+
+    <label for="motivo">A quien quieres dirgirte:</label><br>
+    <select id="motivo" name="motivo" required>
+    <option value="">-- Selecciona una opción --</option>
+    <option value="Staff-1">Juan Rodríguez</option>
+    <option value="Staff-2">Ana Perez</option>
+    <option value="Staff-3">Eva Garcia</option>
+    <option value="Staff-4">Manel Cifuentes</option>
+    </select><br><br>
+
+    <p><label>¿Qué servicios te interesan?</label> </p>
+    <p class="form-input">
+    <label for="personas">Cuidado de persona</label>
+    <input type="checkbox" id="personas" name="personas" value="Web">
+    </p>
+
+    <p class="form-input">
+    <label for="hogar">Cuidado del hogar</label>
+    <input type="checkbox" id="hogar" name="hogar" value="Web">
+    </p>
+
+    <p class="form-input">
+    <label for="limpieza">Limpieza</label>
+    <input type="checkbox" id="limpieza" name="limpieza" value="SEO">
+    </p>
+
+    <p class="form-input">
+    <label for="arreglos">Arreglos en el hogar</label>
+    <input type="checkbox" id="arreglos" name="arreglos" value="Design">
+    </p>
+    <br>
+
+    <button type="submit">Enviar</button>
+    <p class="form-input confirmar">
+        <label for="confirmar">Debes confirmar que aceptas nuestra política de confidencialidad.
+        <a href="politica.html">Ver política de confidencialidad</a>
+        </a></label>
+        <input type="checkbox" id="confirmar" name="confirmar" value="Design">
+        </p>
+</form>
+        </section>
+        
+</main>
+<!-- footer -->
+<footer>
+ <div class="socials">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+ </div>
+
+ <p>&copy; 2025 Tu mano amiga. Todos los derechos reservados.</p>
+
+ <div>
+    <p>Tu mano amiga S.L.</p>
+    <p>Calle Mayor 17</p>
+    <p>48010 Bilbao</p>
+    <p>info@tumanoamiga.com</p>
+    
+ </div>   
+</footer>
+</body>
+</html>
