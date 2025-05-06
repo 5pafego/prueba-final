@@ -1,16 +1,15 @@
 # [Tu mano amiga]
 <img src="img/mano-amiga.png" width="300" height="200">
-<br>
-<br>
-<br>
+
 ### Prueba técnica de evaluación
-<br>
+
+  
 ### Paco Fernández
-<br>
-<br>
+
 ### Prueba evaluatoria de HTML, CSS y Javascript
+
 ### Bootcamp Peñascal F5.
-<br>
+
 ### Proyecto:
   
   Este es un sitio que te pone en contacto con profesionales que te ayudaran a realizar tareas del día a día.
