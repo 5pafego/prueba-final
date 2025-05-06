@@ -3,13 +3,13 @@
 <br>
 <br>
 <br>
-# Prueba técnica de evaluación
+### Prueba técnica de evaluación
 <br>
-# Paco Fernández
+### Paco Fernández
 <br>
 <br>
-# Prueba evaluatoria de HTML, CSS y Javascript
-# Bootcamp Peñascal F5.
+### Prueba evaluatoria de HTML, CSS y Javascript
+### Bootcamp Peñascal F5.
 <br>
 # Proyecto:
   
