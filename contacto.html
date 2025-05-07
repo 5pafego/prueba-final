@@ -20,11 +20,16 @@
     </div>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="about.html">about</a></li>
 
         </ul>
-
+	 <div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	 </div>
+	</nav>
 </header>
  <main>
     <section>
@@ -52,55 +57,53 @@
     <label for="message">Comentario:</label><br>
     <textarea id="message" name="message" rows="5" cols="30" placeholder="Escribe aqui tu comentario"></textarea><br><br>
 
-    <label for="motivo">A quien quieres dirgirte:</label><br>
-    <select id="motivo" name="motivo" required>
+    <label for="persona">A quien quieres dirgirte:</label><br>
+    <select id="persona" name="person" required>
     <option value="">-- Selecciona una opción --</option>
-    <option value="Staff-1">Juan Rodríguez</option>
-    <option value="Staff-2">Ana Perez</option>
-    <option value="Staff-3">Eva Garcia</option>
-    <option value="Staff-4">Manel Cifuentes</option>
+    <option value="Juan Rodríguez">Juan Rodríguez</option>
+    <option value="Ana Peréz">Ana Peréz</option>
+    <option value="Eva García">Eva García</option>
+    <option value="Manel Cifuentes">Manel Cifuentes</option>
     </select><br><br>
 
     <p><label>¿Qué servicios te interesan?</label> </p>
     <p class="form-input">
     <label for="personas">Cuidado de persona</label>
-    <input type="checkbox" id="personas" name="personas" value="Web">
+    <input type="checkbox" id="personas" name="services" value="Cuidado personas">
     </p>
 
     <p class="form-input">
-    <label for="hogar">Cuidado del hogar</label>
-    <input type="checkbox" id="hogar" name="hogar" value="Web">
+    <label for="cocina">Cocina</label>
+    <input type="checkbox" id="cocina" name="services" value="Cocina">
     </p>
 
     <p class="form-input">
     <label for="limpieza">Limpieza</label>
-    <input type="checkbox" id="limpieza" name="limpieza" value="SEO">
+    <input type="checkbox" id="limpieza" name="services" value="Limpieza">
     </p>
 
     <p class="form-input">
     <label for="arreglos">Arreglos en el hogar</label>
-    <input type="checkbox" id="arreglos" name="arreglos" value="Design">
+    <input type="checkbox" id="arreglos" name="services" value="Arreglos">
     </p>
     <br>
 
     <button type="submit">Enviar</button>
     <p class="confirmar">
-        <input type="checkbox" id="confirmar" name="confirmar" value="Design">
-        <label for="confirmar">Debes confirmar que aceptas nuestra política de confidencialidad.
-        <a href="politica.html">Ver política de confidencialidad</a>
-        </a></label>
-        
+        <input type="checkbox" id="privacyPolicy" name="privacyPolicy"  required>
+       <label for="privacyPolicy">Acepto la <a href="#">política de privacidad</a></label>  
     </p>
 </form>
         </section>
-        
+	<!--back to top⬆ -->
+  <button id="backToTopBtn">⬆</button>   
 </main>
 <!-- footer -->
 <footer>
  <div class="socials">
     <a href="#"><i class="fab fa-facebook"></i></a>
     <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-linkedin"></i></a>
  </div>
 
@@ -114,5 +117,8 @@
     
  </div>   
 </footer>
+<!-- SCRIPTS-->
+<script src="js/main.js"></script>		  
+<script src="js/session.js"></script>
 </body>
 </html>

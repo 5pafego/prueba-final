@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bloquear Botón de Envío</title>
+<style>
+  #submitBtn {
+    cursor: not-allowed; /* Indica visualmente que el botón está deshabilitado */
+  }
+  #submitBtn:not(:disabled) {
+    cursor: pointer; /* Cambia el cursor cuando el botón está habilitado */
+  }
+</style>
+</head>
+<body>
+
+<form id="myForm">
+  <div>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name"><br><br>
+  </div>
+  <div>
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email"><br><br>
+  </div>
+  <div>
+    <input type="checkbox" id="privacyPolicy" name="privacyPolicy">
+    <label for="privacyPolicy">Acepto la <a href="#">política de privacidad</a></label><br><br>
+  </div>
+  <button type="submit" id="submitBtn" disabled>Enviar</button>
+</form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const privacyCheckbox = document.getElementById('privacyPolicy');
+    const submitButton = document.getElementById('submitBtn');
+    const myForm = document.getElementById('myForm');
+
+    // Escucha los cambios en el estado del checkbox de la política de privacidad.
+    privacyCheckbox.addEventListener('change', function() {
+      // Si el checkbox está marcado, habilita el botón de envío; de lo contrario, deshabilítalo.
+      submitButton.disabled = !this.checked;
+    });
+
+    // Opcional: Puedes añadir un listener para el envío del formulario para realizar otras acciones.
+    myForm.addEventListener('submit', function(e) {
+      // Verifica nuevamente si el checkbox está marcado antes de permitir el envío.
+      if (!privacyCheckbox.checked) {
+        e.preventDefault(); // Evita el envío si no está marcado (por si acaso el atributo 'disabled' falla por alguna razón).
+        alert('Debes aceptar la política de privacidad para enviar el formulario.');
+      } else {
+        alert('Formulario enviado (esto es solo un ejemplo).');
+        // Aquí iría tu lógica para enviar los datos del formulario.
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

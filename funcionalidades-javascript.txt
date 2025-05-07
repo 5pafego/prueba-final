@@ -1,0 +1,9 @@
+Funcionalidades javascript:
+1-login-logout usando variables de sesión y ciclo for en la comparación y para mostar lista de usuarios registrados -ok
+2-Botón back to top, usa evento scroll -ok
+3-Menu hamburguesa, mostrar u ocultar al hacer clic sobre el icono (evento click, mostrar y ocultar elementos del DOM) -no en about y contacto
+4-Editar los datos enviados por el formulario en una nueva página tomando los datos de la url   -ok
+5-Mostrar la fecha formateada, uso de una instancia de la clase fecha de javascript -ok
+
+
+6-habilitar (enabled) y desabilitar (disabled) botón de envío del formulário de contacto, dependiendo de si se ha selecinado o no el botón de aceptación de política de privacidad
